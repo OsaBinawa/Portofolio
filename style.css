@@ -122,6 +122,9 @@ section {
         background-image: url('images/DemitRace.png');
     }
 
+    .project-card.proyek4 {
+        background-image: url('images/GearPath.png');
+    }
 /* CERTIFICATIONS */
 .certifications {
     padding: 60px 0;
