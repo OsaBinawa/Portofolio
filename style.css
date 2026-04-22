@@ -158,11 +158,14 @@ section {
     transform: translateY(-5px);
 }
 
+/* IMAGE CONTROL (IMPORTANT) */
 .certificate-card img {
     width: 100%;
-    height: auto;        /* let image keep original ratio */
-    object-fit: contain; /* ensures full image is visible */
+    height: 160px;
+    object-fit: contain;
+    background-color: #1e1e1e; /* fills empty space nicely */
 }
+
 
 /* TEXT SMALLER */
 .certificate-card h3 {
