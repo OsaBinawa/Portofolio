@@ -41,7 +41,6 @@ section {
 .project-card {
     position: relative;
     overflow: hidden;
-    flex: 1 1 calc(50% - 20px);
     border-radius: 8px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -50,150 +49,150 @@ section {
     cursor: pointer;
 }
 
-    .project-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 1;
-        border-radius: 8px;
-    }
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    border-radius: 8px;
+}
 
-    .project-card:hover::before {
-        opacity: 1;
-    }
+.project-card:hover::before {
+    opacity: 1;
+}
 
-    .project-card .project-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        opacity: 0;
-        z-index: 2;
-        transition: opacity 0.4s ease, transform 0.3s ease;
-        padding: 20px;
-    }
+.project-card .project-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    padding: 20px;
+}
 
-    .project-card:hover .project-content {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1.02);
-    }
+.project-card:hover .project-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+}
 
-    .project-card h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-    .project-card p {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
-    .project-card .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #663399;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
+.project-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #663399;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
-        .project-card .btn:hover {
-            background-color: #4c2673;
-        }
+.project-card .btn:hover {
+    background-color: #4c2673;
+}
 
-    .project-card.proyek1 {
-        background-image: url('images/FaunaEscort.png');
-    }
+/* Background images */
+.project-card.proyek1 { background-image: url('images/FaunaEscort.png'); }
+.project-card.proyek2 { background-image: url('images/AnkotTycoon.png'); }
+.project-card.proyek3 { background-image: url('images/DemitRace.png'); }
+.project-card.proyek4 { background-image: url('images/GearPath.png'); }
 
-    .project-card.proyek2 {
-        background-image: url('images/AnkotTycoon.png');
-    }
-    .project-card.proyek3 {
-        background-image: url('images/DemitRace.png');
-    }
+/* ========================= */
+/* ✅ CERTIFICATIONS (FIXED) */
+/* ========================= */
 
-    .project-card.proyek4 {
-        background-image: url('images/GearPath.png');
-    }
-/* CERTIFICATIONS */
 .certifications {
     padding: 60px 0;
     background-color: #1e1e1e;
 }
 
-    .certifications h2 {
-        text-align: center;
-        font-size: 32px;
-        margin-bottom: 40px;
-        color: #fff;
-    }
-
-.certificates {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+.certifications h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #fff;
 }
 
+/* GRID LAYOUT */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD SIZE CONTROL */
 .certificate-card {
     background-color: #2a2a2a;
     border-radius: 12px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     overflow: hidden;
-    width: calc(33.33% - 20px);
+    width: 100%;
+    max-width: 260px;
     display: flex;
     flex-direction: column;
     text-align: center;
     transition: transform 0.3s ease;
 }
 
-    .certificate-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .certificate-card img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .certificate-card h3 {
-        font-size: 18px;
-        color: #e0e0e0;
-        padding: 16px;
-    }
-
-.certificate-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 0 0 20px;
+.certificate-card:hover {
+    transform: translateY(-5px);
 }
 
-    .certificate-buttons .btn {
-        padding: 10px 16px;
-        background-color: #663399;
-        color: #fff;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
-    }
+.certificate-card img {
+    width: 100%;
+    height: auto;        /* let image keep original ratio */
+    object-fit: contain; /* ensures full image is visible */
+}
 
-        .certificate-buttons .btn:hover {
-            background-color: #4c2673;
-        }
+/* TEXT SMALLER */
+.certificate-card h3 {
+    font-size: 16px;
+    color: #e0e0e0;
+    padding: 10px;
+}
+
+/* BUTTONS */
+.certificate-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 15px 15px;
+}
+
+.certificate-buttons .btn {
+    padding: 8px 12px;
+    background-color: #663399;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-buttons .btn:hover {
+    background-color: #4c2673;
+}
 
 /* CONTACT */
 .contact {
@@ -201,14 +200,14 @@ section {
     color: #ccc;
 }
 
-    .contact a {
-        color: #ccc;
-        text-decoration: underline;
-    }
+.contact a {
+    color: #ccc;
+    text-decoration: underline;
+}
 
-        .contact a:hover {
-            color: #fff;
-        }
+.contact a:hover {
+    color: #fff;
+}
 
 /* FOOTER */
 footer {
@@ -221,41 +220,17 @@ footer {
 
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
-    .project-card {
-        flex: 1 1 100%;
-        height: 250px;
-    }
-
     .certificate-card {
-        width: calc(50% - 16px);
+        max-width: 220px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .project-card h3 {
-        font-size: 18px;
-    }
-
-    .project-card p {
-        font-size: 14px;
-    }
-
-    .project-card .btn {
-        width: 100%;
-        font-size: 14px;
+    .certificates {
+        grid-template-columns: 1fr;
     }
 
     .certificate-card {
-        width: 100%;
+        max-width: 100%;
     }
-
-    .certificate-buttons {
-        flex-direction: column;
-        gap: 8px;
-        padding: 0 20px 20px;
-    }
-
-        .certificate-buttons .btn {
-            width: 100%;
-        }
 }
