@@ -3,77 +3,192 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Game Dev</title>
+    <title>Osadi Cipta Binawa — Game Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <span class="nav-mark">OCB</span>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
-            <h1>OSADI CIPTA BINAWA</h1>
-            <p>Game Developer</p>
+            <p class="eyebrow"><span class="px"><span></span><span></span></span> Game Developer</p>
+            <h1>Osadi Cipta Binawa</h1>
+            <p class="role"></p>
+            <div class="hero-foot">
+                <a href="#projects" class="see-work">See the work</a>
+                <span class="hero-count">5 projects</span>
+            </div>
+            <div class="hero-swatches">
+                <span style="--sw: var(--c1)"></span>
+                <span style="--sw: var(--c2)"></span>
+                <span style="--sw: var(--c3)"></span>
+                <span style="--sw: var(--c4)"></span>
+                <span style="--sw: var(--c5)"></span>
+            </div>
         </div>
     </header>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-card proyek1">
-                    <div class="project-content">
-                        <h3>Fauna Escort</h3>
-                        <p></p>
-                        <a href="https://tc1tc.itch.io/fauna-escort" class="btn" target="_blank">View Project</a>
-                    </div>
+    <main>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Projects</h2>
+                    <span class="section-meta">5 builds</span>
                 </div>
-                <div class="project-card proyek2">
-                    <div class="project-content">
-                        <h3>Angkot Tycoon</h3>
-                        <p></p>
-                        <a href="https://tc1tc.itch.io/angkott" class="btn" target="_blank">View Project</a>
-                    </div>
+                <div class="cart-list">
+
+                    <a href="https://tc1tc.itch.io/fauna-escort" class="cart-flip" target="_blank">
+                        <div class="cart proyek1">
+                            <div class="cart-face cart-front">
+                                <div class="cart-grip"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cart-label"><img src="images/FaunaEscort.png" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('label-empty')" /></div>
+                                <div class="cart-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            </div>
+                            <div class="cart-face cart-back">
+                                <p class="project-tag">Puzzle</p>
+                                <h3>Fauna Escort</h3>
+                                <span class="play">Play →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://tc1tc.itch.io/angkott" class="cart-flip" target="_blank">
+                        <div class="cart proyek2">
+                            <div class="cart-face cart-front">
+                                <div class="cart-grip"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cart-label"><img src="images/AnkotTycoon.png" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('label-empty')" /></div>
+                                <div class="cart-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            </div>
+                            <div class="cart-face cart-back">
+                                <p class="project-tag">Sim / Tycoon</p>
+                                <h3>Angkot Tycoon</h3>
+                                <span class="play">Play →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://tc1tc.itch.io/demit-race-the-haunted-circuit" class="cart-flip" target="_blank">
+                        <div class="cart proyek3">
+                            <div class="cart-face cart-front">
+                                <div class="cart-grip"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cart-label"><img src="images/DemitRace.png" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('label-empty')" /></div>
+                                <div class="cart-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            </div>
+                            <div class="cart-face cart-back">
+                                <p class="project-tag">Racing</p>
+                                <h3>Demit Race</h3>
+                                <span class="play">Play →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://tc1tc.itch.io/gearpath" class="cart-flip" target="_blank">
+                        <div class="cart proyek4">
+                            <div class="cart-face cart-front">
+                                <div class="cart-grip"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cart-label"><img src="images/GearPath.png" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('label-empty')" /></div>
+                                <div class="cart-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            </div>
+                            <div class="cart-face cart-back">
+                                <p class="project-tag">Puzzle-Platformer</p>
+                                <h3>Gear Path</h3>
+                                <span class="play">Play →</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://tc1tc.itch.io/folklore-dungeon" class="cart-flip" target="_blank">
+                        <div class="cart proyek5">
+                            <div class="cart-face cart-front">
+                                <div class="cart-grip"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cart-label"><img src="images/Folklore.png" alt="" loading="lazy" onerror="this.style.display='none'; this.parentElement.classList.add('label-empty')" /></div>
+                                <div class="cart-pins"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+                            </div>
+                            <div class="cart-face cart-back">
+                                <p class="project-tag">RogueLike</p>
+                                <h3>Folklore Dungeon</h3>
+                                <span class="play">Play →</span>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
-                <div class="project-card proyek3">
-                    <div class="project-content">
-                        <h3>Demit Race</h3>
-                        <p></p>
-                        <a href="https://tc1tc.itch.io/demit-race-the-haunted-circuit" class="btn" target="_blank">View Project</a>
-                    </div>
+            </div>
+        </section>
+
+        <section class="certifications" id="certifications">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Certifications</h2>
+                    <span class="section-meta">2 completed</span>
                 </div>
-                <div class="project-card proyek4">
-                    <div class="project-content">
-                        <h3>Gear Path</h3>
-                        <p></p>
-                        <a href="https://tc1tc.itch.io/gearpath" class="btn" target="_blank">View Project</a>
+                <div class="cert-row">
+
+                    <div class="cert-card">
+                        <div class="cert-top">
+                            <img src="images/TSASertif.png" alt="TSA Gamefest certificate" />
+                            <div class="cert-info">
+                                <h3>TSA Gamefest</h3>
+                                <span class="cert-status">Completed</span>
+                            </div>
+                        </div>
+                        <div class="cert-buttons">
+                            <a href="pdf/TSASerti.pdf" class="btn" target="_blank">Certificate</a>
+                            <a href="pdf/TSAGrade.pdf" class="btn" target="_blank">Grade Report</a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-top">
+                            <img src="images/GameSeedSertif.png" alt="Game Seed certificate" />
+                            <div class="cert-info">
+                                <h3>Game Seed</h3>
+                                <span class="cert-status">Completed</span>
+                            </div>
+                        </div>
+                        <div class="cert-buttons">
+                            <a href="images/GameSeedSertif.png" class="btn" target="_blank">Certificate</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-list">
+                    <div class="contact-row">
+                        <span class="label">Email</span>
+                        <a href="mailto:Osaciptabinawa2410@gmail.com">Osaciptabinawa2410@gmail.com</a>
+                    </div>
+                    <div class="contact-row">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/osadi-cipta-binawa-206948361/" target="_blank">Osadi Cipta Binawa</a>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+    </main>
 
-    <div class="certificates">
-    <div class="certificate-card">
-        <img src="images/TSASertif.png" alt="Sertifikat 1" />
-        <h3>TSA Gamefest</h3>
-        <div class="certificate-buttons">
-            <a href="pdf/TSASerti.pdf" class="btn" target="_blank">View PDF</a>
-            <a href="pdf/TSAGrade.pdf" class="btn" target="_blank">View Grade PDF</a>
-        </div>
-    </div>
+    <footer>
+        <div class="pixel-rule"><span></span><span></span><span></span></div>
+        <p>OSADI CIPTA BINAWA — GAME DEVELOPER © 2026</p>
+    </footer>
 
-    <div class="certificate-card">
-        <img src="images/GameSeedSertif.png" alt="Sertifikat 2" />
-        <h3>Game Seed</h3>
-        <div class="certificate-buttons">
-            <a href="images/GameSeedSertif.png" class="btn" target="_blank">View</a>
-        </div>
-    </div>
-</div>
-
-    <section class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: Osaciptabinawa2410@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/osadi-cipta-binawa-206948361/" target="_blank">Osadi Cipta Binawa</a></p>
-        </div>
-    </section>
 </body>
 </html>
